@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>2987blade // Kush Gautam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@300;400;600&family=Barlow+Condensed:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<div id="scanline"></div>
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<nav>
+  <div class="nav-id">
+    <img class="nav-logo" src="assets/logo.jpg" alt="logo"/>
+    <span class="nav-blade">2987<span>blade</span></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#ctf">CTF</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-status">ONLINE</div>
+</nav>
+
+<section id="hero">
+  <div class="hero-l">
+    <p class="hero-classified">Security Researcher · University Student</p>
+    <h1 class="hero-name">
+      <span class="blade" data-t="2987blade">2987blade</span>
+      Kush Gautam
+    </h1>
+    <p class="hero-realname">Kush Gautam</p>
+    <div class="hero-divider"></div>
+    <p class="hero-desc">
+      Offensive security practitioner. CTF competitor. Zero-trust architect.<br/>
+      Ranked <span class="hl">#1 in India on TryHackMe</span> and
+      <strong>Top 1% globally</strong> (world rank 10,864). Recently
+      <strong>won Echiesta CTF 2026</strong> offline.
+    </p>
+    <div class="hero-tags">
+      <span class="htag">Web Exploitation</span>
+      <span class="htag">Cryptography</span>
+      <span class="htag">Forensics</span>
+      <span class="htag">OSINT</span>
+      <span class="htag">Bash</span>
+      <span class="htag">Python</span>
+      <span class="htag">Flask</span>
+    </div>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary"><span>View Projects</span></a>
+      <a href="mailto:kushgautam348@gmail.com" class="btn btn-ghost"><span>Contact Me</span></a>
+    </div>
+  </div>
+  <div class="hero-r">
+    <div class="radar-wrap">
+      <canvas id="radar-canvas" width="340" height="340"></canvas>
+      <img class="radar-logo" src="assets/logo.jpg" alt="logo"/>
+    </div>
+    <div class="hero-bigstat">
+      <div class="hero-bigstat-num">#1 🇮🇳</div>
+      <div class="hero-bigstat-label">India Rank — TryHackMe</div>
+      <div class="hero-bigstat-sub">Top 1% Global · World Rank 10,864</div>
+    </div>
+    <div class="hero-statrow">
+      <div class="hsr"><div class="hsr-n">231</div><div class="hsr-l">Rooms Done</div></div>
+      <div class="hsr"><div class="hsr-n">29</div><div class="hsr-l">Badges</div></div>
+      <div class="hsr"><div class="hsr-n">222🔥</div><div class="hsr-l">Day Streak</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="sh-eyebrow">01</div>
+      <h2 class="sh-title">Arsenal &amp; <em>Skills</em></h2>
+      <div class="sh-rule"><div class="sh-rule-line"></div><span class="sh-rule-count">06 CATEGORIES</span></div>
+    </div>
+    <div class="skill-layout">
+      <div class="sk reveal"><div class="sk-num">01</div><div class="sk-cat">// Offensive Security</div><div class="sk-name">Penetration Testing</div><div class="tags"><span class="tag">nmap</span><span class="tag">Rustscan</span><span class="tag">Burp Suite</span><span class="tag">Metasploit</span><span class="tag">SQLMap</span><span class="tag">Gobuster</span><span class="tag">Hydra</span><span class="tag">John the Ripper</span></div></div>
+      <div class="sk reveal"><div class="sk-num">02</div><div class="sk-cat">// Application Security</div><div class="sk-name">Web Security</div><div class="tags"><span class="tag">SQLi</span><span class="tag">XSS</span><span class="tag">SSRF</span><span class="tag">IDOR</span><span class="tag">LFI/RFI</span><span class="tag">CSRF</span><span class="tag">JWT</span><span class="tag">PortSwigger Labs</span></div></div>
+      <div class="sk reveal"><div class="sk-num">03</div><div class="sk-cat">// Cryptanalysis</div><div class="sk-name">Cryptography</div><div class="tags"><span class="tag">RSA</span><span class="tag">AES</span><span class="tag">XOR</span><span class="tag">Hash Cracking</span><span class="tag">CryptoHack</span><span class="tag">PyCryptodome</span></div></div>
+      <div class="sk reveal"><div class="sk-num">04</div><div class="sk-cat">// Investigation</div><div class="sk-name">Forensics &amp; Stego</div><div class="tags"><span class="tag">Wireshark</span><span class="tag">Steghide</span><span class="tag">ExifTool</span><span class="tag">strings</span><span class="tag">file / xxd</span></div></div>
+      <div class="sk reveal"><div class="sk-num">05</div><div class="sk-cat">// Reconnaissance</div><div class="sk-name">OSINT</div><div class="tags"><span class="tag">Shodan</span><span class="tag">TheHarvester</span><span class="tag">Recon-ng</span><span class="tag">OSINT Framework</span><span class="tag">Google Dorking</span></div></div>
+      <div class="sk reveal"><div class="sk-num">06</div><div class="sk-cat">// Development</div><div class="sk-name">Programming &amp; Dev</div><div class="tags"><span class="tag">Python</span><span class="tag">Bash</span><span class="tag">Flask</span><span class="tag">JavaScript</span><span class="tag">HTML/CSS</span><span class="tag">SQL</span><span class="tag">Git</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap-alt">
+    <div class="sh reveal">
+      <div class="sh-eyebrow">02</div>
+      <h2 class="sh-title">Selected <em>Projects</em></h2>
+      <div class="sh-rule"><div class="sh-rule-line"></div><span class="sh-rule-count">04 ENTRIES</span></div>
+    </div>
+    <div class="proj-layout">
+      <div class="proj reveal">
+        <div class="proj-index">01</div>
+        <div class="proj-cat">// Red Team Infrastructure</div>
+        <div class="proj-name">ShadowLink C2</div>
+        <p class="proj-desc">Command &amp; control framework built for red team operations — encrypted agent-operator communication, task tasking/queuing, and modular payload handling designed for engagement realism and operational security.</p>
+        <div class="proj-stack"><span class="tag">Python</span><span class="tag">C2</span><span class="tag">Red Team</span><span class="tag">Networking</span></div>
+        <div class="proj-links"><a href="https://github.com/2987blade" class="plink" target="_blank">GitHub</a></div>
+      </div>
+      <div class="proj reveal">
+        <div class="proj-index">02</div>
+        <div class="proj-cat">// Zero-Trust Auth System</div>
+        <div class="proj-name">VaultKey</div>
+        <p class="proj-desc">Passwordless login and credential management built on WebAuthn/FIDO2. Zero-trust architecture — no passwords stored anywhere. Features passkey management, vault health scoring, audit logging, rate limiting, and a full glassmorphism UI.</p>
+        <div class="proj-stack"><span class="tag">Flask</span><span class="tag">WebAuthn</span><span class="tag">FIDO2</span><span class="tag">Python</span><span class="tag">Vanilla JS</span><span class="tag">SQLite</span></div>
+        <div class="proj-links"><a href="https://github.com/2987blade" class="plink" target="_blank">GitHub</a></div>
+      </div>
+      <div class="proj reveal">
+        <div class="proj-index">03</div>
+        <div class="proj-cat">// MCP Security Tooling</div>
+        <div class="proj-name">MCP-Sentinel</div>
+        <p class="proj-desc">Tool-poisoning and rug-pull scanner for MCP agentic tooling. Detects malicious or hijacked MCP server behavior before it reaches production agents. Deployed as a static web app.</p>
+        <div class="proj-stack"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">MCP</span></div>
+        <div class="proj-links"><a href="https://github.com/2987blade" class="plink" target="_blank">GitHub</a></div>
+      </div>
+      <div class="proj reveal">
+        <div class="proj-index">04</div>
+        <div class="proj-cat">// CTF Tooling</div>
+        <div class="proj-name">CTF Study Tracker</div>
+        <p class="proj-desc">Interactive web-based tracker covering 77 tasks across Web Exploitation, Cryptography, Forensics &amp; Steganography, and OSINT — with category filtering, progress persistence, and direct resource links.</p>
+        <div class="proj-stack"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        <div class="proj-links"><a href="https://github.com/2987blade" class="plink" target="_blank">GitHub</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ctf">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="sh-eyebrow">03</div>
+      <h2 class="sh-title">CTF <em>Record</em></h2>
+      <div class="sh-rule"><div class="sh-rule-line"></div><span class="sh-rule-count">COMPETITION HISTORY</span></div>
+    </div>
+    <div class="ctf-list">
+      <div class="ctf win reveal">
+        <div>
+          <div class="ctf-name">Echiesta CTF 2026</div>
+          <div class="ctf-meta">2026 · Offline · Team Competition</div>
+          <div class="ctf-badges"><span class="badge gold">🏆 Champion</span><span class="badge gold">Web</span><span class="badge gold">Crypto</span><span class="badge gold">Forensics</span><span class="badge gold">OSINT</span></div>
+        </div>
+        <div class="ctf-rank"><div class="rank-num gold">#1</div><div class="rank-label gold">Winner</div></div>
+      </div>
+      <div class="ctf reveal">
+        <div>
+          <div class="ctf-name">TryHackMe</div>
+          <div class="ctf-meta">Ongoing · 231 Rooms Completed · 222-Day Streak</div>
+          <div class="ctf-badges"><span class="badge">Top 1% Global</span><span class="badge">#1 India</span></div>
+        </div>
+        <div class="ctf-rank"><div class="rank-num">⚡</div><div class="rank-label">Active</div></div>
+      </div>
+      <div class="ctf reveal">
+        <div>
+          <div class="ctf-name">PicoCTF</div>
+          <div class="ctf-meta">Online · Ongoing</div>
+          <div class="ctf-badges"><span class="badge">All Categories</span></div>
+        </div>
+        <div class="ctf-rank"><div class="rank-num">⚡</div><div class="rank-label">Active</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="blog">
+  <div class="wrap-alt">
+    <div class="sh reveal">
+      <div class="sh-eyebrow">04</div>
+      <h2 class="sh-title">Blog &amp; <em>Writeups</em></h2>
+      <div class="sh-rule"><div class="sh-rule-line"></div><span class="sh-rule-count">MEDIUM · @71HASHED</span></div>
+    </div>
+    <div class="blog-row">
+      <a class="blog-card reveal" href="https://medium.com/@71hashed" target="_blank">
+        <div class="blog-tag">// CTF Writeup</div>
+        <div class="blog-title">Latest writeups and security research</div>
+        <div class="blog-sub">CTF walkthroughs, vulnerability breakdowns, and security research published under @71hashed.</div>
+        <span class="blog-more">Read on Medium</span>
+      </a>
+      <a class="blog-card reveal" href="https://medium.com/@71hashed" target="_blank">
+        <div class="blog-tag">// Research</div>
+        <div class="blog-title">Web exploitation techniques &amp; methodology</div>
+        <div class="blog-sub">Deep dives into web security — SQLi, XSS, SSRF, IDOR and beyond. Practical examples from real CTF challenges.</div>
+        <span class="blog-more">Read on Medium</span>
+      </a>
+      <a class="blog-card reveal" href="https://medium.com/@71hashed" target="_blank">
+        <div class="blog-tag">// Guides</div>
+        <div class="blog-title">Crypto &amp; forensics challenge breakdowns</div>
+        <div class="blog-sub">Breaking down crypto puzzles and forensics — from Caesar to RSA, pcap analysis to steganography extraction.</div>
+        <span class="blog-more">Read on Medium</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="sh reveal">
+      <div class="sh-eyebrow">05</div>
+      <h2 class="sh-title">Education &amp; <em>Credentials</em></h2>
+      <div class="sh-rule"><div class="sh-rule-line"></div><span class="sh-rule-count">TIMELINE</span></div>
+    </div>
+    <div class="edu-list">
+      <div class="edu reveal"><div class="edu-year">2023 – 2027</div><div><div class="edu-title">SVSU</div><div class="edu-sub">B.Tech · Computer Engineering</div></div></div>
+      <div class="edu reveal"><div class="edu-year">2026</div><div><div class="edu-title">TryHackMe — #1 India, Top 1% Global</div><div class="edu-sub">World Rank 10,864 · 231 Rooms Completed · 222-Day Streak · 29 Badges</div></div></div>
+      <div class="edu reveal"><div class="edu-year">2026</div><div><div class="edu-title">Echiesta CTF 2026 — Champion</div><div class="edu-sub">Offline competition · First place · Full-category coverage</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <p class="ct-eyebrow reveal">// Transmission open — ready to collaborate</p>
+  <h2 class="ct-title reveal">Let's<br/><em>Connect</em></h2>
+  <p class="ct-sub reveal">Open to CTF teams, security research, internships, and bug bounty collaborations.</p>
+  <div class="social-row reveal">
+    <a href="mailto:kushgautam348@gmail.com" class="soc"><span class="soc-icon">✉</span><span class="soc-label">Email</span></a>
+    <a href="https://github.com/2987blade" class="soc" target="_blank"><span class="soc-icon">⌥</span><span class="soc-label">GitHub</span></a>
+    <a href="https://www.linkedin.com/in/kush-gautam-b4a244292/" class="soc" target="_blank"><span class="soc-icon">◈</span><span class="soc-label">LinkedIn</span></a>
+    <a href="https://x.com/2987bladeX" class="soc" target="_blank"><span class="soc-icon">✕</span><span class="soc-label">Twitter</span></a>
+    <a href="https://tryhackme.com/p/2987blade" class="soc" target="_blank"><span class="soc-icon">⚔</span><span class="soc-label">TryHackMe</span></a>
+    <a href="https://app.hackthebox.com/users/2136950" class="soc" target="_blank"><span class="soc-icon">◆</span><span class="soc-label">HackTheBox</span></a>
+    <a href="https://ctftime.org/profile/2987blade" class="soc" target="_blank"><span class="soc-icon">⚑</span><span class="soc-label">CTFtime</span></a>
+    <a href="https://medium.com/@71hashed" class="soc" target="_blank"><span class="soc-icon">✍</span><span class="soc-label">Medium</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-id">2987blade // Kush Gautam</div>
+  <div class="footer-copy">Built with intention. Secured by design.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
